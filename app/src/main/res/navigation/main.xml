@@ -8,4 +8,12 @@
               android:name="com.example.deeplinkonnavigation.FirstFragment"
               android:label="fragment_first"
               tools:layout="@layout/fragment_first"/>
+
+    <fragment android:id="@+id/secondFragment"
+              android:name="com.example.deeplinkonnavigation.SecondFragment"
+              android:label="fragment_second"
+              tools:layout="@layout/fragment_second">
+        <deepLink app:uri="http://www.example.com/users"/>
+    </fragment>
+
 </navigation>
