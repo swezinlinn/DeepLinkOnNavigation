@@ -13,7 +13,10 @@
               android:name="com.example.deeplinkonnavigation.SecondFragment"
               android:label="fragment_second"
               tools:layout="@layout/fragment_second">
-        <deepLink app:uri="http://www.example.com/users"/>
+        <argument android:name="direction"
+                  app:argType="integer"
+                  android:defaultValue="0"/>
+        <deepLink app:uri="http://www.example.com/users?contact={contact}&amp;direction={direction}"/>
     </fragment>
 
 </navigation>

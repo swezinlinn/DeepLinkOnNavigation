@@ -28,7 +28,7 @@ class FirstFragment : Fragment() {
         super.onActivityCreated(savedInstanceState)
         txv_go_to_second.setOnClickListener {
             val openURL = Intent(Intent.ACTION_VIEW)
-            openURL.data = Uri.parse("http://www.example.com/users")
+            openURL.data = Uri.parse("http://www.example.com/users?contact=null&direction=2")
             startActivity(openURL)
         }
     }
